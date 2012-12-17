@@ -16,7 +16,7 @@ func main() {
 	flag.Usage = func() {
 		fmt.Println("usage: uexec [-user=user] command")
 		fmt.Println("")
-		fmt.Println("Works like sudo- u, but does not messs with your environment.")
+		fmt.Println("Works like sudo- u, but does not messs with your environment (including LD_LIBRARY_PATH).")
 		fmt.Println("")
 		flag.PrintDefaults()
 	}
