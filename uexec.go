@@ -22,7 +22,7 @@ func main() {
 	}
 	flag.Parse()
 	args := flag.Args()
-	if len(args) != 1 {
+	if len(args) < 1 {
 		flag.Usage()
 		os.Exit(1)
 	}
